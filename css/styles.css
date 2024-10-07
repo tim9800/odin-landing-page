@@ -107,7 +107,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 400px 50px 400px;
+    padding: 50px 450px 50px 450px;
 }
 
 .content-mid-1 .big-text {
@@ -115,5 +115,39 @@ body {
     color: #1F2937;
     font-weight: 900;
     padding-bottom: 50px;
+    text-wrap: nowrap;
 
 }
+
+.content-mid-1 .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    flex: 0 1 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.card .subtext {
+    color: #384455;
+}
+
+.bubble {
+    display: flex;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    box-sizing: border-box
+}
+
+.bubble img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
