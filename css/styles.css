@@ -201,6 +201,7 @@ body {
 }
 
 button.banner-right {
+    text-wrap: nowrap;
     border: 2px solid #E5E7EB;
     border-radius: 10px;
     background-color: transparent;
