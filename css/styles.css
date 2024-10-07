@@ -2,4 +2,81 @@
 
 body {
     font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    min-width: 1200px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 24px 300px 100px 300px;
+}
+
+.header-logo{
+    flex-shrink: 0;
+    padding-right: 24px;
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-links{
+    display: flex;
+    flex-shrink: 0;
+    list-style: none;
+    gap: 24px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.content-top {
+    display: flex;
+    min-width: 1200px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0px 300px 100px 300px;
+    background-color: #1f2937;
+    height: auto;
+    gap: 24px;
+}
+
+.left .big-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.right {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: end    ;
+}
+
+
+.right img {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.left {
+    flex-basis: 100%;
 }
