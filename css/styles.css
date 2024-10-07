@@ -82,6 +82,12 @@ body {
     font-weight: 700;
     padding: 8px 48px;
     border: 0px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.left button:hover {
+    background-color: #002c72;
 }
 
 .right {
