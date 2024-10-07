@@ -102,3 +102,18 @@ body {
     height: auto;
     object-fit: contain;
 }
+
+.content-mid-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 400px 50px 400px;
+}
+
+.content-mid-1 .big-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding-bottom: 50px;
+
+}
