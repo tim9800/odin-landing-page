@@ -40,6 +40,10 @@ body {
     color: white;
 }
 
+.content {
+    flex: 1;
+}
+
 .content-top {
     display: flex;
     box-sizing: border-box;
@@ -203,5 +207,24 @@ button.banner-right {
     padding: 5px 30px;
     font-weight: 700;
     font-size: 18px;
+    color: #E5E7EB;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button.banner-right:hover {
+    background-color:#E5E7EB;
+    color: #3882F6;
+}
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    padding: 36px 300px;
     color: #E5E7EB;
 }
