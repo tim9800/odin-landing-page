@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #1f2937;
-    padding: 24px 300px 100px 300px;
+    padding: 24px max(15vw, 100px) 100px max(15vw, 100px);
 }
 
 .header-logo{
@@ -48,7 +48,7 @@ body {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    padding: 0px 300px 100px 300px;
+    padding: 0px max(15vw, 100px) 100px max(15vw, 100px);
     background-color: #1f2937;
     height: auto;
     gap: 24px;
@@ -105,11 +105,14 @@ body {
     object-fit: contain;
 }
 
+.content-mid-1, .content-mid-2 {
+    padding: 50px max(15vw, 100px) 50px max(15vw, 100px);
+}
+
 .content-mid-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 450px 50px 450px;
 }
 
 .content-mid-1 .big-text {
@@ -123,7 +126,7 @@ body {
 
 .content-mid-1 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -156,7 +159,6 @@ body {
 .content-mid-2 {
     display: flex;
     flex-direction: column;
-    padding: 150px 500px 100px 500px;
     background-color: #E5E7EB;
     color: #1f2937;
 }
@@ -166,16 +168,19 @@ body {
     font-weight: 300;
     font-style: italic;
     font-size: 36px;
+    min-width: 400px;
+    padding: 0 5vw;
 }
 
 .content-mid-2 .signature {
     text-align: right;
     font-size: 24px;
     font-weight: 700;
+    padding: 0 5vw;
 }
 
 .content-bottom{
-    padding: 100px 300px;
+    padding: 100px max(15vw, 100px);
     display: flex;
     box-sizing: border-box;
 }
@@ -184,20 +189,25 @@ body {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     align-items: center;
     background-color: #3882F6;
     color: #E5E7EB;
-    padding: 40px 100px;
+    padding: 40px max(8vw, 100px);
     border-radius: 10px;
 }
 
 .call-to-action {
     font-size: 20px;
     font-weight: 700;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 .call-to-action-subtext{
     font-size: 18px;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 button.banner-right {
@@ -228,4 +238,5 @@ button.banner-right:hover {
 .footer-text {
     padding: 36px 300px;
     color: #E5E7EB;
+    text-wrap: nowrap;
 }
